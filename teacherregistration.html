@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>student dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+	<!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <!-- Custom styles for this template >
+    <link href="form-validation.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />-->
+    
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  </head>
+
+  <body class="bg-light">
+  	
+   
+    <div class="container">
+      <div class="py-5 text-center">
+        <!--<img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+        <h2>Teacher Dashboard</h2>
+ 
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      	<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">-->
+      		<!--<span class="navbar-toggler-icon"></span>-->
+      	<!--</button>-->
+      <!--	<div class="collapse navbar-collapse" id="navbarText">-->
+      		<ul class="nav nav-pills">
+      			<li class="nav-item">
+      				<a class="nav-link " href="teacherprofile.html">Form</a>
+      			</li>
+      			<li class="nav-item">
+      				<a class="nav-link active" href="teacherregistration.html">Registration</a>
+      			</li>
+      		</ul>
+      	<!--</div>-->
+      </nav>
+      
+
+
+
+      <div class="row">
+        
+        <div class="col-lg ">
+        	  <div class="card" style="width: 100 rem;">
+      	    <div class="card-body">
+      		<h5 class="card-title">Registration</h5>
+      		          <form class="needs-validation" novalidate>
+
+           
+
+            <div class="row">
+            	<div class="col">
+                <label for="date">Date </label>
+              	<!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
+              	<div><input type="date" class="form-control" id="date" value="2018-04-08"/></div>
+             
+              </div>
+              <div class="col">
+                <label for="time">Time </label>              	
+              	<input type="time" class="form-control" id="time" value="13:59"/>
+                  </div>
+              </div>
+             
+          
+
+            
+            <hr class="mb-4 ">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+            <!--<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>-->
+          </form>
+        </div>
+      </div>
+            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+          
+        </div>
+      </div>
+      
+      
+          <!--<h4 class="mb-3">Billing address</h4>-->
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    <!--</div>-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+    
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
+
